@@ -1,6 +1,9 @@
 
 typedef long long ll;
 const ll inf = 1e9+20;
+const int MAX = 200;
+
+ll cost[MAX][MAX];
 
 void init(int n ){
     for( int i = 0; i <= n; i++ ){
