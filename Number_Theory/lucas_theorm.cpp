@@ -6,7 +6,7 @@ void factorial( int md ){
     }
 }
 
-ll lucas_theorm( ll n , ll r, ll p ){ // p must be prime & small , n, r can be large
+ll lucas_theorm( ll n , ll r, ll p ){ // ( p = mod )  must be prime & small , n, r can be large
     ll ans = 1;
     while( n || r ){
         if( n % p < r % p ) return 0;
