@@ -25,7 +25,12 @@ template< class T > T lcm(T a, T b) { return (a / gcd<T>(a, b) * b); }
 //const int fx[]={-2, -2, -1, -1,  1,  1,  2,  2};  // Knights Move
 //const int fy[]={-1,  1, -2,  2, -2,  2, -1,  1}; // Knights Move
 /*------------------------------------------------*/
-
+/*-----------------------Bitmask------------------*/
+//int Set(int N,int pos){return N=N || (1<<pos);}
+//int reset(int N,int pos){return N= N & ~(1<<pos);}
+//bool check(int N,int pos){return (bool)(N & (1<<pos));}
+//int countbit( int x ){ return __builtin_popcount( x );}
+/*------------------------------------------------*/
 inline const int EQ( double tmp ){ if( fabs( tmp ) < eps ) return 0; return tmp > eps ? 1 : -1;}
 ll  BM(ll  B,ll  P,ll  M){ ll  R=1; while(P>0)  { if(P&1){ R=(R*B)%M;}P/=2;B=(B*B)%M;}return (ll )R;}
 ll  MI(ll  x, ll m ){ return BM(x,m-2,m); }
