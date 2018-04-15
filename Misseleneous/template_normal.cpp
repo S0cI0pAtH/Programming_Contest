@@ -2,8 +2,8 @@
 #define pb push_back
 #define mpp make_pair
 #define PI acos(-1)
+#define fast ios_base:: sync_with_stdio( false ); cin.tie(0); cout.tie(0);
 /*************NOTES*********************\
-
 ***************************************/
 using namespace std;
 typedef long long ll;
@@ -26,7 +26,7 @@ template< class T > T lcm(T a, T b) { return (a / gcd<T>(a, b) * b); }
 //const int fy[]={-1,  1, -2,  2, -2,  2, -1,  1}; // Knights Move
 /*------------------------------------------------*/
 /*-----------------------Bitmask------------------*/
-//int Set(int N,int pos){return N=N || (1<<pos);}
+//int Set(int N,int pos){return N=N | (1<<pos);}
 //int reset(int N,int pos){return N= N & ~(1<<pos);}
 //bool check(int N,int pos){return (bool)(N & (1<<pos));}
 //int countbit( int x ){ return __builtin_popcount( x );}
@@ -35,12 +35,16 @@ inline const int EQ( double tmp ){ if( fabs( tmp ) < eps ) return 0; return tmp 
 ll  BM(ll  B,ll  P,ll  M){ ll  R=1; while(P>0)  { if(P&1){ R=(R*B)%M;}P/=2;B=(B*B)%M;}return (ll )R;}
 ll  MI(ll  x, ll m ){ return BM(x,m-2,m); }
 
+inline int LEFT( int x ){ return ( x << 1 ) ; }
+inline int RIGHT ( int x ) { return (x<<1) + 1 ;}
 
 int main ( ){
-     #ifdef swapnil
+     #ifdef S0cI0pAtH
     freopen("in.txt","r",stdin );
     //freopen("out.txt","w",stdout );
-    #endif // swapnil
+    #endif // S0cI0pAtH
+
+
 
 
     return 0;
