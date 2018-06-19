@@ -1,0 +1,10 @@
+vector< ll > findDivisors( ll n ){
+    vector< ll > divi;
+    for( ll i = 1; i * i <= n; i++ ){
+        if( n % i == 0 ){
+            divi.pb( i );
+            if( n / i != i )divi.pb( n / i );
+        }
+    }
+    return divi;
+}
